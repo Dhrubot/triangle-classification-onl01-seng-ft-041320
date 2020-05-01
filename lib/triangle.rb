@@ -11,12 +11,14 @@ class Triangle
   
   def kind
     
+    if right
     if right == left && left == bottom && right == bottom
       :equilateral
-    elsif left == bottom 
+    elsif right == left || left || bottom || right || bottom 
       :isosceles
     else
-      
-      
+      :scalene
+    end
   end
+  
 end
