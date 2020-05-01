@@ -11,7 +11,10 @@ class Triangle
   
   def kind
     
-    if (right + left <= bottom) || (right + bottom <= left) || (left + bottom <= right) || right <= 0 || left <= 0 || 
+    if (right + left <= bottom) || (right + bottom <= left) || (left + bottom <= right) 
+      || (right <= 0) || (left <= 0) || (bottom <= 0)
+      
+      raise 
       
       
     if right == left && left == bottom && right == bottom
