@@ -10,7 +10,10 @@ class Triangle
   end
   
   def kind
+    
     if right == left && left == bottom && right == bottom
+      :equilateral
+    elsif left
       
   end
 end
