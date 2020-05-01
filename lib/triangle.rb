@@ -13,7 +13,10 @@ class Triangle
     
     if right == left && left == bottom && right == bottom
       :equilateral
-    elsif left
+    elsif left == bottom 
+      :isosceles
+    else
+      
       
   end
 end
