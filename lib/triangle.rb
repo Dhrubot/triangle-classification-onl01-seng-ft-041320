@@ -9,7 +9,8 @@ class Triangle
     @bottom = bottom
   end
   
-  def type
-    
+  def kind
+    if right == left && left == bottom && right == bottom
+      
   end
 end
