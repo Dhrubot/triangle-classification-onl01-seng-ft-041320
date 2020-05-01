@@ -17,9 +17,9 @@ class Triangle
     end
       
       
-    if right == left && left == bottom
+    if right == left && left == bottom && right == bottom
       :equilateral
-    elsif right == left || left || bottom || right || bottom 
+    elsif right == left || left == bottom || right == bottom 
       :isosceles
     else
       :scalene
