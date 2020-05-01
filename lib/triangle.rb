@@ -14,7 +14,8 @@ class Triangle
     if (right + left <= bottom) || (right + bottom <= left) || (left + bottom <= right) 
       || (right <= 0) || (left <= 0) || (bottom <= 0)
       
-      raise 
+      raise TriangleError
+    end
       
       
     if right == left && left == bottom && right == bottom
@@ -26,4 +27,7 @@ class Triangle
     end
   end
   
+  
+  class TriangleError < StandardError
+  end
 end
